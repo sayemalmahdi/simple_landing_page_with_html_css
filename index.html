@@ -19,6 +19,7 @@
                 <li><a href="">My Works</a></li>
                 <li><a href="">Contact</a></li>
             </ul>
+            <img src="images/moon.png" alt="" id="icon">
         </nav>
         <div class="info">
             <h1>I am <span>Sayem</span> Mahdi</h1>
@@ -37,5 +38,20 @@
             <a href=""><i class="fab fa-dribbble"></i></a>
         </div>
     </div>
+
+    <!-- javascript -->
+    <script>
+        var icon = document.getElementById("icon");
+
+        icon.onclick = function(){
+            document.body.classList.toggle("dark-theme");
+            if(document.body.classList.contains("dark-theme")){
+                icon.src = "images/sun.png";
+            }else{
+                icon.src = "images/moon.png";
+            }
+        }
+
+    </script>
 </body>
 </html>
